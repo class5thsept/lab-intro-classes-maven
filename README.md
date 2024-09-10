@@ -5,8 +5,9 @@ Some explorations with the basics of classes in Java
 ---
 
 YOUR NAMES HERE
+Leonardo Alves Nunes, Jafar Jarrar 
 
-We got through Exercise: ###
+We got through Exercise: Middle of Exercise 4
 
 ACKNOWLEDGEMENTS
 

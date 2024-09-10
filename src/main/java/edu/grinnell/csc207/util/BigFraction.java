@@ -90,6 +90,8 @@ public class BigFraction {
     this.denom = DEFAULT_DENOMINATOR;
   } // BigFraction
 
+  
+
   // +---------+------------------------------------------------------
   // | Methods |
   // +---------+
@@ -126,6 +128,16 @@ public class BigFraction {
     return new BigFraction(resultNumerator, resultDenominator);
   } // add(BigFraction)
 
+  public BigFraction multiplyFrac(BigFraction multiplend){
+    BigInteger resultDenominator = this.denom.multiply(multiplend.denom);
+    BigInteger resultNumerator = this.num.multiply(multiplend.num);
+    return new BigFraction(resultNumerator,resultDenominator);
+  }
+
+  public BigFraction fractional(){
+    BigInteger remainder = this.num.mod(this.denom);
+    return new BigFraction(remainder, this.denom);
+  }
   /**
    * Get the denominator of this fraction.
    *
